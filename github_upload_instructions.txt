@@ -1,0 +1,38 @@
+HOW TO UPLOAD THIS PROJECT TO GITHUB (PowerShell)
+===================================================
+
+1. Open PowerShell and navigate to the folder where you saved these 3 files
+   (data_cleaning.py, business_analysis.sql, README.md):
+
+   cd "C:\path\to\your\walmart-project"
+
+2. Initialize git (only needed once):
+
+   git init
+
+3. Add all files:
+
+   git add .
+
+4. Commit the files:
+
+   git commit -m "Add Walmart end-to-end Python/SQL project"
+
+5. Create a new empty repository on GitHub.com first (via the website,
+   name it e.g. "walmart-sql-python-project"), then link it:
+
+   git remote add origin https://github.com/YOUR-USERNAME/walmart-sql-python-project.git
+
+6. Push your files to GitHub:
+
+   git branch -M main
+   git push -u origin main
+
+NOTE: Before step 6, make sure you've filled in your actual result numbers
+in the README.md "Key Findings" section. Your PostgreSQL password is NOT
+stored in data_cleaning.py anymore -- it's read from an environment
+variable (POSTGRES_PASSWORD) instead, so it's safe to upload publicly.
+Just remember to set that environment variable on any machine you run
+this script from:
+
+   $env:POSTGRES_PASSWORD = "your_actual_password"
