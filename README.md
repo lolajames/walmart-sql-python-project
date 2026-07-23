@@ -71,7 +71,7 @@ below for details on the partial 2019 records.
 | 12 | Compare each branch's monthly revenue to the overall monthly average (subquery + window function) |
 | 12B | Which branches most consistently outperform or underperform their monthly cohort average across the full dataset? |
 
-Full queries are in [`business_analysis.sql`](./business_analysis.sql).
+Full queries are in [`Walmart project2.sql`](./Walmart project2.sql).
 
 ---
 
